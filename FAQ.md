@@ -24,6 +24,8 @@ ReactDOM.render(
 );
 ```
 
+
+
 When you load the root page of a website hosted on a static file server (e.g., `http://www.example.com`), a `<BrowserHistory>` might appear to work. However, this is only because when the browser makes the request for the root page, the server responds with the root `index.html` file.
 
 If you load the application through the root page, in-app navigation will work because requests are not actually made to the server. This means that if you load `http://www.example.com` and click a link to `http://www.example.com/other-page/`, your application will match and render the `/other-page/` route.
